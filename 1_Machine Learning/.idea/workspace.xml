@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bd68fe09-0b2e-4f6d-80de-577f03f83bca" name="Changes" comment="update file.">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/실습_02-2_Data preprocessing-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/실습_02-1_지도학습_훈련세트&amp;테스트세트.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/실습_02-1_지도학습_훈련세트&amp;테스트세트.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/실습_02-2_Data preprocessing.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/학습_01_머신러닝개념.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/학습_01_머신러닝개념.ipynb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="27yUzlNj86f10Bw6LUDeZYHH1en" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd68fe09-0b2e-4f6d-80de-577f03f83bca" name="Changes" comment="" />
+      <created>1650292084302</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650292084302</updated>
+      <workItem from="1650292085627" duration="117000" />
+      <workItem from="1650349842686" duration="1682000" />
+      <workItem from="1650415916663" duration="1293000" />
+    </task>
+    <task id="LOCAL-00001" summary="update file.">
+      <created>1650357020140</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1650357020140</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update file.">
+      <created>1650358153105</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650358153105</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update file.">
+      <created>1650358195230</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1650358195230</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update file." />
+    <option name="LAST_COMMIT_MESSAGE" value="update file." />
+  </component>
+</project>
