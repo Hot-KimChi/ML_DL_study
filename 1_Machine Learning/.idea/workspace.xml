@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd68fe09-0b2e-4f6d-80de-577f03f83bca" name="Changes" comment="update file.">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/실습_02-2_Data preprocessing-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/실습_02-1_지도학습_훈련세트&amp;테스트세트.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/실습_02-1_지도학습_훈련세트&amp;테스트세트.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/실습_02-2_Data preprocessing.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/학습_01_머신러닝개념.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/학습_01_머신러닝개념.ipynb" afterDir="false" />
+    <list default="true" id="bd68fe09-0b2e-4f6d-80de-577f03f83bca" name="Changes" comment="update files.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +34,7 @@
       <updated>1650292084302</updated>
       <workItem from="1650292085627" duration="117000" />
       <workItem from="1650349842686" duration="1682000" />
-      <workItem from="1650415916663" duration="1293000" />
+      <workItem from="1650415916663" duration="2577000" />
     </task>
     <task id="LOCAL-00001" summary="update file.">
       <created>1650357020140</created>
@@ -61,7 +57,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650358195230</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update files.">
+      <created>1650443101287</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650443101287</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update files.">
+      <created>1650443157811</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650443157811</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,6 +91,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update file." />
-    <option name="LAST_COMMIT_MESSAGE" value="update file." />
+    <MESSAGE value="update files." />
+    <option name="LAST_COMMIT_MESSAGE" value="update files." />
   </component>
 </project>
