@@ -49,14 +49,16 @@ def func_facegd(feature):
     ## 2) Name에서 결혼한 여성일 경우, 생존 확률이 높을 것이다. 아래 구현.
 def func_feature_eng(train, test):
     try:
+        # 2번 작업하는 번거스러움을 피하기 위해, 합쳐서 1번만 작업 진행.
         train_test_data = [train, test]
 
         ## Name을 기반으로 결혼한 여성일 경우, "Mr": 0, "Miss": 1, "Mrs": 2 표시. 그 외 3으로 define.
         for dataset in train_test_data:
             dataset['Title'] = dataset['Name'].str.extract('([A-Za-z]+)\.', expand=False)
-        print(dataset)
+        print('Title 추가:')
+        print(dataset.head())
 
-        ## train_test_data에서 dataset으로 생성할지라도, train + test의 컬럼(Title)이 생성된다.
+        ## train_test_data에서 dataset으로 생성할지라도, train / test의 컬럼(Title)이 생성된다.
         print(train.head())
         print(train['Title'].value_counts())
         print(test['Title'].value_counts())
@@ -68,7 +70,7 @@ def func_feature_eng(train, test):
 
         for dataset in train_test_data:
             dataset['Title'] = dataset['Title'].map(title_mapping)
-
+        print('Title mapping:')
         print(train.head())
 
         # Delete unnecessary feature from dataset
@@ -80,7 +82,8 @@ def func_feature_eng(train, test):
         sex_mapping = {"male": 0, "female": 1}
         for dataset in train_test_data:
             dataset['Sex'] = dataset['Sex'].map(sex_mapping)
-
+        print('Sex mapping:')
+        print(train.head())
 
         ## Age(나이), 어떤 데이터는 missing.
         ## missing 데이터를 어떠한 방법으로 채워 넣을 것인가? 1) 전체 나이의 평균으로 채워넣기 2) 남자의 평균 / 결혼여성 평균 / 결혼하지 않는 여성의 평균.
@@ -101,6 +104,7 @@ if __name__ == '__main__':
     ## data parameter 설명.
     print(train.head(5))
     print(train.info())
+
     print(test.head(5))
     print(test.info())
     print()
@@ -127,9 +131,10 @@ if __name__ == '__main__':
     func_bar_chart('SibSp')
     func_bar_chart('Parch')
 
+    ## feature engineering.
+    func_feature_eng(train, test)
 
     ## Title을 bar_chart에 plot.
-    func_feature_eng(train, test)
     func_bar_chart('Title')
     func_facegd('Age')
 
