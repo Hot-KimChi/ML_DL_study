@@ -1,4 +1,12 @@
+import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set()
+plt.style.use('seaborn')
+import warnings
+warnings.filterwarnings('ignore')
+
 
 ## pandas setting change.
 pd.set_option('display.max_rows', None)
@@ -6,11 +14,6 @@ pd.set_option('display.max_columns', None)
 pd.set_option('display.width', None)
 pd.set_option('display.max_colwidth', None)
 
-
-## seaborn으로 visualization.
-import matplotlib.pyplot as plt
-import seaborn as sns
-sns.set()
 
 ## bar-chart plot 데이터를 구현하기 위해 function.
 def func_bar_chart(feature):
@@ -27,8 +30,8 @@ def func_bar_chart(feature):
         print('error:func_bar_chart')
 
 
-## face-grid 데이터 구현하기 위해 function
-def func_facegd(feature):
+## facet-grid 데이터 구현하기 위해 function
+def func_facet(feature):
     try:
         facet = sns.FacetGrid(train, hue="Survived", aspect=4)
         facet.map(sns.kdeplot, feature, shade=True)
@@ -39,7 +42,7 @@ def func_facegd(feature):
         plt.show()
 
     except():
-        print('error: func_facegd')
+        print('error: func_facet')
 
 
 
@@ -85,6 +88,7 @@ def func_feature_eng(train, test):
         print('Sex mapping:')
         print(train.head())
 
+
         ## Age(나이), 어떤 데이터는 missing.
         ## missing 데이터를 어떠한 방법으로 채워 넣을 것인가? 1) 전체 나이의 평균으로 채워넣기 2) 남자의 평균 / 결혼여성 평균 / 결혼하지 않는 여성의 평균.
         ## 2번 method로 진행.
@@ -92,11 +96,22 @@ def func_feature_eng(train, test):
         test['Age'].fillna(test.groupby('Title')['Age'].transform('median'), inplace=True)
 
 
+        ## Binning(라벨 / 원핫 인코딩을 쓰지 않고 변환)
+        for dataset in train_test_data:
+            dataset.loc[dataset['Age'] <= 16, 'Age'] = 0,
+
+
+
     except():
         print('error: func_feature_eng')
 
 
 if __name__ == '__main__':
+
+    ## Part1: Exploratory Data Analysis(EDA)
+    ## 1)Analysis of the features.
+    ## 2)Finding any relations or trends considering multiple features.
+
     ## load data
     train = pd.read_csv('input/train.csv')
     test = pd.read_csv('input/test.csv')
@@ -136,6 +151,6 @@ if __name__ == '__main__':
 
     ## Title을 bar_chart에 plot.
     func_bar_chart('Title')
-    func_facegd('Age')
+    func_facet('Age')
 
     ##
