@@ -6,6 +6,7 @@ sns.set()
 plt.style.use('seaborn')
 import warnings
 warnings.filterwarnings('ignore')
+import missingno as msno
 
 
 
