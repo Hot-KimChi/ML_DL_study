@@ -9,8 +9,6 @@ warnings.filterwarnings('ignore')
 import missingno as msno
 
 
-
-
 ## pandas setting change.
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
