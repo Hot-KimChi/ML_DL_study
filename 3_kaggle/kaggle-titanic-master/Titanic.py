@@ -102,7 +102,6 @@ def func_feature_eng(train, test):
             dataset.loc[dataset['Age'] <= 16, 'Age'] = 0,
 
 
-
     except():
         print('error: func_feature_eng')
 
