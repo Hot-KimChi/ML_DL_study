@@ -32,6 +32,7 @@ val = div2k_data.as_dataset(split='validation', as_supervised=True)
 val_cache = val.cache()
 
 
+
 ## Flip, crop and resize images
 def func_flip_LR(lowres_img, highres_img):
     '''Flips Images to left and right'''
@@ -160,4 +161,3 @@ def PSNR(super_resolution, high_resolution):
     # Max value of pixel is 255
     psnr_value = tf.image.psnr(high_resolution, super_resolution, max_val=255)[0]
     return psnr_value
-    
