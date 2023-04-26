@@ -157,3 +157,5 @@ for i in range(9):
     plt.imshow(lowres[i].numpy().astype("uint8"))
     plt.title(lowres[i].shape)
     plt.axis("off")
+
+plt.show()
