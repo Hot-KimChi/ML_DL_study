@@ -8,6 +8,9 @@ from tensorflow import keras
 from tensorflow.keras import layers
 
 
+# from tensorflow.python.client import device_lib
+# print(device_lib.list_local_devices())
+
 def func_make_model():
     inputs = keras.Input(shape=(28, 28, 1))
 
@@ -44,7 +47,7 @@ def func_dataset_object():
 train_images, train_labels, test_images, test_labels = func_dataset_object()
 
 model.compile(optimizer='rmsprop', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-model.fit(train_images, train_labels, epochs=10, batch_size=64)
+model.fit(train_images, train_labels, epochs=5, batch_size=64)
 
 test_loss, test_acc = model.evaluate(test_images, test_labels)
 print(f'테스트 정확도: {test_acc:.3f}')
