@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1988aab-a41f-4bec-a356-a4cdb418a986" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Jupyter notebook.iml" beforeDir="false" />
+    <list default="true" id="f1988aab-a41f-4bec-a356-a4cdb418a986" name="변경" comment="update modeling file">
       <change beforePath="$PROJECT_DIR$/.idea/ML_DL_study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ML_DL_study.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_Deep Learning/3_케라스 창시자에게 배우는 딥러닝/8.2_소규모 데이터셋에서 밑바닥부터 컨브넷 훈련하기.py" beforeDir="false" afterPath="$PROJECT_DIR$/4_Deep Learning/3_케라스 창시자에게 배우는 딥러닝/8.2_소규모 데이터셋에서 밑바닥부터 컨브넷 훈련하기.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +26,8 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable"
+    "last_opened_file_path": "D:/PycharmProjects/ML_DL_study",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
@@ -36,6 +39,18 @@
       <option name="presentableId" value="Default" />
       <updated>1682686479422</updated>
     </task>
+    <task id="LOCAL-00001" summary="update modeling file">
+      <created>1682686767467</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682686767467</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update modeling file" />
+    <option name="LAST_COMMIT_MESSAGE" value="update modeling file" />
   </component>
 </project>
