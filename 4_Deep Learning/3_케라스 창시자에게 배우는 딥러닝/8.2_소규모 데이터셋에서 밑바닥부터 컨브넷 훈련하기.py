@@ -40,7 +40,7 @@ make dataset from directory
 '''
 import os, shutil, pathlib
 
-org_dir = pathlib.Path('D:\PycharmProjects\dogs-vs-cats\train')
+org_dir = pathlib.Path('D:\PycharmProjects\dogs-vs-cats\\train')
 new_dir = pathlib.Path('D:\PycharmProjects\dogs-vs-cats\dataset')
 
 def func_make_subset(subset_name, start_index, end_index):
