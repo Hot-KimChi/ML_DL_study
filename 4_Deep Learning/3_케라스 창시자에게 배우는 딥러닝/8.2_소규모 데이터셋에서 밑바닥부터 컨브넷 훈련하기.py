@@ -5,33 +5,6 @@
 3) 97.5% 성능: 사전 훈련된 네트워크로 특성을 추출
 4) 98.5% 성능: 사전 훈련된 네트워크를 세밀하게 튜닝
 '''
-from tensorflow import keras
-from keras import layers
-import tensorflow as tf
-
-
-def func_make_model():
-
-    inputs = keras.Input(shape=(180, 180, 3))
-
-    x = layers.Rescaling(1./255)(inputs)
-    x = layers.Conv2D(filters=32, kernel_size=3, activation='relu')(x)
-    x = layers.MaxPooling2D(pool_size=2)(x)
-    x = layers.Conv2D(filters=64, kernel_size=3, activation='relu')(x)
-    x = layers.MaxPooling2D(pool_size=2)(x)
-    x = layers.Conv2D(filters=128, kernel_size=3, activation='relu')(x)
-    x = layers.MaxPooling2D(pool_size=2)(x)
-    x = layers.Conv2D(filters=256, kernel_size=3, activation='relu')(x)
-    x = layers.MaxPooling2D(pool_size=2)(x)
-    x = layers.Conv2D(filters=256, kernel_size=3, activation='relu')(x)
-    x = layers.Flatten()(x)
-
-    outputs = layers.Dense(1, activation='sigmoid')(x)
-
-    return keras.Model(inputs, outputs)
-
-model = func_make_model()
-print(model.summary())
 
 
 '''
@@ -61,12 +34,39 @@ func_make_subset('validation', start_index=1000, end_index=1500)
 func_make_subset('test', start_index=1500, end_index=2500)
 
 
+'''
+---------------------------------------------------------------------------
+모델 만들기
+'''
+from tensorflow import keras
+from keras import layers
+import tensorflow as tf
+def func_make_model():
 
+    inputs = keras.Input(shape=(180, 180, 3))
 
+    x = layers.Rescaling(1./255)(inputs)
+    x = layers.Conv2D(filters=32, kernel_size=3, activation='relu')(x)
+    x = layers.MaxPooling2D(pool_size=2)(x)
+    x = layers.Conv2D(filters=64, kernel_size=3, activation='relu')(x)
+    x = layers.MaxPooling2D(pool_size=2)(x)
+    x = layers.Conv2D(filters=128, kernel_size=3, activation='relu')(x)
+    x = layers.MaxPooling2D(pool_size=2)(x)
+    x = layers.Conv2D(filters=256, kernel_size=3, activation='relu')(x)
+    x = layers.MaxPooling2D(pool_size=2)(x)
+    x = layers.Conv2D(filters=256, kernel_size=3, activation='relu')(x)
+    x = layers.Flatten()(x)
 
+    outputs = layers.Dense(1, activation='sigmoid')(x)
+
+    return keras.Model(inputs, outputs)
+
+model = func_make_model()
+print(model.summary())
 
 
 '''
+---------------------------------------------------------------------------
 모델 훈련 설정하기
 '''
 model.compile(loss='binary_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
@@ -81,13 +81,30 @@ model.compile(loss='binary_crossentropy', optimizer='rmsprop', metrics=['accurac
 5) 배치로 묶는다.
 --> image_dataset_from_directory 로 위의 단계 자돟화 가능
 '''
-train_dir = 'D:\PycharmProjects\dogs-vs-cats\train'
-test_dir = 'D:\PycharmProjects\dogs-vs-cats\test'
+train_dir = 'D:\PycharmProjects\dogs-vs-cats\dataset\\train'
+validation_dir = 'D:\PycharmProjects\dogs-vs-cats\dataset\\validation'
+test_dir = 'D:\PycharmProjects\dogs-vs-cats\dataset\\test'
 
 from keras.utils import image_dataset_from_directory
 
+batch_size = 32
+img_height = 180
+img_width = 180
 
 train_ds = image_dataset_from_directory(
+    train_dir,
+    image_size=(img_height, img_width),
+    batch_size=batch_size
+    )
 
+validation_ds = image_dataset_from_directory(
+    validation_dir,
+    image_size=(img_height, img_width),
+    batch_size=batch_size
+    )
 
-)
+test_ds = image_dataset_from_directory(
+    test_dir,
+    image_size=(img_height, img_width),
+    batch_size=batch_size
+    )
