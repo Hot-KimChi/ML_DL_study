@@ -108,3 +108,13 @@ test_ds = image_dataset_from_directory(
     image_size=(img_height, img_width),
     batch_size=batch_size
     )
+
+
+'''
+---------------------------------------------------------------------------
+Dataset 반환하는 데이터와 레이블 크기 확인하기
+'''
+for data_batch, labels_batch in train_ds:
+    print('데이터 배치 크기:', data_batch.shape)
+    print('데이터 배치 크기:', labels_batch.shape)
+    break
