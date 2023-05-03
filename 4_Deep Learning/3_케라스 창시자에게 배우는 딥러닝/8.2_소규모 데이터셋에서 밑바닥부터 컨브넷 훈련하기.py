@@ -168,7 +168,7 @@ plt.show()
 
 '''
 ---------------------------------------------------------------------------
-테스트 세트에서 모델 평가하기
+테스트 세트에서 모델 평가하기(0.735%)
 - 비교적 훈련 샘플의 개수(2000개) 적기 때문에 과대적합 발생.
 '''
 test_model = keras.models.load_model('convert_from_scratch.keras')
@@ -231,3 +231,16 @@ model_aug_drop = func_make_model_aug_drop()
 print(model_aug_drop.summary())
 
 model_aug_drop.compile(loss='binary_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
+
+callbacks = [
+    keras.callbacks.ModelCheckpoint(
+        filepath='convert_from_scratch_with_augmentation.keras',
+        save_best_only=True,
+        monitor='val_loss')
+]
+
+history = model_aug_drop.fit(
+    train_ds,
+    epochs=100,
+    validation_data=validation_ds,
+    callbacks=callbacks)

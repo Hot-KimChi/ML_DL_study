@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1988aab-a41f-4bec-a356-a4cdb418a986" name="변경" comment="image_dataset_from_directory">
-      <change afterPath="$PROJECT_DIR$/convert_from_scratch.keras" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f1988aab-a41f-4bec-a356-a4cdb418a986" name="변경" comment="Augmentation and Dropout layer add">
       <change beforePath="$PROJECT_DIR$/4_Deep Learning/3_케라스 창시자에게 배우는 딥러닝/8.2_소규모 데이터셋에서 밑바닥부터 컨브넷 훈련하기.py" beforeDir="false" afterPath="$PROJECT_DIR$/4_Deep Learning/3_케라스 창시자에게 배우는 딥러닝/8.2_소규모 데이터셋에서 밑바닥부터 컨브넷 훈련하기.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683039132541</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Augmentation and Dropout layer add">
+      <created>1683125082185</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683125082185</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -133,6 +138,7 @@
     <MESSAGE value="update datasetII" />
     <MESSAGE value="update for bug-fix" />
     <MESSAGE value="image_dataset_from_directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="image_dataset_from_directory" />
+    <MESSAGE value="Augmentation and Dropout layer add" />
+    <option name="LAST_COMMIT_MESSAGE" value="Augmentation and Dropout layer add" />
   </component>
 </project>
