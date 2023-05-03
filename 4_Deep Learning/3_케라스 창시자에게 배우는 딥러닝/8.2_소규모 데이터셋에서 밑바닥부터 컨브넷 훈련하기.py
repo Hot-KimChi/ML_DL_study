@@ -73,6 +73,7 @@ model.compile(loss='binary_crossentropy', optimizer='rmsprop', metrics=['accurac
 
 
 '''
+---------------------------------------------------------------------------
 데이터 전처리
 1) 사진 파일 load
 2) JPEG 콘텐츠를 RGB 픽셀값으로 디코딩
@@ -118,3 +119,115 @@ for data_batch, labels_batch in train_ds:
     print('데이터 배치 크기:', data_batch.shape)
     print('데이터 배치 크기:', labels_batch.shape)
     break
+
+
+'''
+---------------------------------------------------------------------------
+Dataset 활용하여 모델 훈련하기
+'''
+callbacks = [
+    keras.callbacks.ModelCheckpoint(
+        filepath='convert_from_scratch.keras',
+        save_best_only=True,
+        monitor='val_loss')
+]
+
+history = model.fit(
+    train_ds,
+    epochs=30,
+    validation_data=validation_ds,
+    callbacks=callbacks)
+
+
+'''
+---------------------------------------------------------------------------
+결과 그래프로 그리기
+'''
+import matplotlib.pyplot as plt
+
+accuracy = history.history['accuracy']
+val_accuracy = history.history['val_accuracy']
+
+loss = history.history['loss']
+val_loss = history.history['val_loss']
+
+cnt_epochs = range(1, len(accuracy)+1)
+
+plt.plot(cnt_epochs, accuracy, 'bo', label='training_accuracy')
+plt.plot(cnt_epochs, val_accuracy, 'b', label='validation_accuracy')
+plt.title('Training and validation accuracy')
+plt.legend()
+
+plt.figure()
+plt.plot(cnt_epochs, loss, 'bo', label='training_loss')
+plt.plot(cnt_epochs, val_loss, 'b', label='validation_loss')
+plt.title('Training and validation loss')
+plt.legend()
+plt.show()
+
+
+'''
+---------------------------------------------------------------------------
+테스트 세트에서 모델 평가하기
+- 비교적 훈련 샘플의 개수(2000개) 적기 때문에 과대적합 발생.
+'''
+test_model = keras.models.load_model('convert_from_scratch.keras')
+test_loss, test_acc = test_model.evaluate(test_ds)
+print(f'테스트 정확도: {test_acc:.3f}')
+
+
+'''
+---------------------------------------------------------------------------
+- 과대적합을 해결하기 위하여, 데이터 증식 사용
+- 데이터 증식 시, 모델에 같은 입력 데이터가 2번 주입되지 않지만, 입력 데이터들 사이에 상호 연관성이 크다.
+    - 과대적합을 더 억제하기 위해, 밀집 연결 분류기 직전에 Dropout 층 추가
+'''
+data_augmentation = keras.Sequential(
+    [
+        layers.RandomFlip('horizontal'),
+        layers.RandomRotation(0.1),
+        layers.RandomZoom(0.2)
+    ]
+)
+
+plt.figure(figsize=(10, 10))
+for images, _ in train_ds.take(1):
+    for i in range(9):
+        augmented_images = data_augmentation(images)
+        ax = plt.subplot(3, 3, i+1)
+        plt.imshow(augmented_images[0].numpy().astype('uint8'))
+        plt.axis('off')
+
+print(augmented_images.shape)
+
+
+'''
+---------------------------------------------------------------------------
+- 이미지 증식과 드롭아웃을 포함한 컨브넷 만들기
+'''
+def func_make_model_aug_drop():
+
+    inputs = keras.Input(shape=(180, 180, 3))
+    x = data_augmentation(inputs)
+
+    x = layers.Rescaling(1./255)(inputs)
+    x = layers.Conv2D(filters=32, kernel_size=3, activation='relu')(x)
+    x = layers.MaxPooling2D(pool_size=2)(x)
+    x = layers.Conv2D(filters=64, kernel_size=3, activation='relu')(x)
+    x = layers.MaxPooling2D(pool_size=2)(x)
+    x = layers.Conv2D(filters=128, kernel_size=3, activation='relu')(x)
+    x = layers.MaxPooling2D(pool_size=2)(x)
+    x = layers.Conv2D(filters=256, kernel_size=3, activation='relu')(x)
+    x = layers.MaxPooling2D(pool_size=2)(x)
+    x = layers.Conv2D(filters=256, kernel_size=3, activation='relu')(x)
+    x = layers.Flatten()(x)
+
+    x = layers.Dropout(0.5)(x)
+    outputs = layers.Dense(1, activation='sigmoid')(x)
+
+    return keras.Model(inputs, outputs)
+
+model_aug_drop = func_make_model_aug_drop()
+print(model_aug_drop.summary())
+
+model_aug_drop.compile(loss='binary_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
