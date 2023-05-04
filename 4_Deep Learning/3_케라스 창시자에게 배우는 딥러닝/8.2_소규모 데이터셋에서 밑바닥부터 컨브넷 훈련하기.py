@@ -18,8 +18,12 @@ new_dir = pathlib.Path('D:\PycharmProjects\dogs-vs-cats\dataset')
 
 def func_make_subset(subset_name, start_index, end_index):
     for category in ('cat', 'dog'):
-        dir = new_dir / subset_name / category
-        os.makedirs(dir)
+        try:
+            dir = new_dir / subset_name / category
+            os.makedirs(dir)
+        except OSError:
+            if not os.path.isdir(dir):
+                raise
 
         fnames = [f'{category}.{i}.jpg'
                   for i in range(start_index, end_index)]
@@ -244,3 +248,8 @@ history = model_aug_drop.fit(
     epochs=100,
     validation_data=validation_ds,
     callbacks=callbacks)
+
+
+test_model_aug = keras.models.load_model('convert_from_scratch_with_augmentation.keras')
+test_loss_aug, test_acc_aug = test_model_aug.evaluate(test_ds)
+print(f'테스트 정확도: {test_acc_aug: 3.f}')
