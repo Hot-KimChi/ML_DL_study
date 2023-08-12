@@ -1,0 +1,2 @@
+
+rapidapi_key = 'c149679a1amsh76701cf7091cd86p1de503jsn19f933ebcc7b'
