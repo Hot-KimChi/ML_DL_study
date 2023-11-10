@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a318b90-68d2-41fd-b5f3-e9d14e3f0ca5" name="변경" comment="update deep learning material" />
+    <list default="true" id="9a318b90-68d2-41fd-b5f3-e9d14e3f0ca5" name="변경" comment="update deep learning material">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_Deep_Learning/4_Deep_Learning_with_Python/10_Timeseries_RNN.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/4_Deep_Learning/4_Deep_Learning_with_Python/10_Timeseries_RNN.ipynb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +15,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2PQKa0QN47csVHrqzAjVZzrAy64" />
   <component name="ProjectViewState">
@@ -155,7 +161,63 @@
       <option name="project" value="LOCAL" />
       <updated>1695029767983</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update deep learning material">
+      <option name="closed" value="true" />
+      <created>1695030321378</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1695030321378</updated>
+    </task>
+    <task id="LOCAL-00017" summary="update deep learning material">
+      <option name="closed" value="true" />
+      <created>1695030420579</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1695030420579</updated>
+    </task>
+    <task id="LOCAL-00018" summary="update deep learning material">
+      <option name="closed" value="true" />
+      <created>1696604884918</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1696604884918</updated>
+    </task>
+    <task id="LOCAL-00019" summary="update deep learning material">
+      <option name="closed" value="true" />
+      <created>1696775861028</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1696775861028</updated>
+    </task>
+    <task id="LOCAL-00020" summary="update deep learning material">
+      <option name="closed" value="true" />
+      <created>1696948375963</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1696948375963</updated>
+    </task>
+    <task id="LOCAL-00021" summary="update deep learning material">
+      <option name="closed" value="true" />
+      <created>1697208997107</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1697208997107</updated>
+    </task>
+    <task id="LOCAL-00022" summary="update deep learning material">
+      <option name="closed" value="true" />
+      <created>1697900085341</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1697900085341</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
