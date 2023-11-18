@@ -1,0 +1,82 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"9a318b90-68d2-41fd-b5f3-e9d14e3f0ca5\" name=\"변경\" comment=\"update deep learning material\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2PQKa0QN47csVHrqzAjVZzrAy64\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/inseo/PycharmProjects/ML_DL_study&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"애플리케이션 수준\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"디폴트 작업\">\r\n      <changelist id=\"9a318b90-68d2-41fd-b5f3-e9d14e3f0ca5\" name=\"변경\" comment=\"\" />\r\n      <created>1683383938542</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1683383938542</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"update pretrained model\">\r\n      <created>1683385032419</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683385032419</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"update keras web material\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695028567008</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695028567008</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"update deep learning material\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695028636584</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695028636584</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"update deep learning material\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695028662963</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695028662963</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"update deep learning material\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695028968509</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695028968509</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"update deep learning material\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695029021756</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695029021756</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"update deep learning material\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695029201395</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695029201395</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"update deep learning material\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695029213490</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695029213490</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"update deep learning material\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695029547597</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695029547598</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"update deep learning material\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695029563405</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695029563405</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"update deep learning material\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695029592227</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695029592227</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"update deep learning material\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695029612814</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695029612814</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"update deep learning material\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695029638263</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695029638263</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"update deep learning material\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695029706842</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695029706842</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"update deep learning material\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695029767983</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695029767983</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"16\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"update pretrained model\" />\r\n    <MESSAGE value=\"update keras web material\" />\r\n    <MESSAGE value=\"update deep learning material\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"update deep learning material\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 492557bc974402f694e59368c4696b65cde1310c)
++++ b/.idea/workspace.xml	(date 1699579130269)
+@@ -4,7 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="9a318b90-68d2-41fd-b5f3-e9d14e3f0ca5" name="변경" comment="update deep learning material" />
++    <list default="true" id="9a318b90-68d2-41fd-b5f3-e9d14e3f0ca5" name="변경" comment="update deep learning material">
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -12,6 +15,10 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="UPDATE_TYPE" value="REBASE" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="2PQKa0QN47csVHrqzAjVZzrAy64" />
+   <component name="ProjectViewState">
+@@ -23,7 +30,7 @@
+     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/Users/inseo/PycharmProjects/ML_DL_study&quot;,
++    &quot;last_opened_file_path&quot;: &quot;D:/PycharmProjects/ML_DL_study&quot;,
+     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+   }
+ }</component>
+@@ -155,7 +162,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1695029767983</updated>
+     </task>
+-    <option name="localTasksCounter" value="16" />
++    <task id="LOCAL-00016" summary="update deep learning material">
++      <created>1697102012682</created>
++      <option name="number" value="00016" />
++      <option name="presentableId" value="LOCAL-00016" />
++      <option name="project" value="LOCAL" />
++      <updated>1697102012682</updated>
++    </task>
++    <task id="LOCAL-00017" summary="update deep learning material">
++      <created>1699538549475</created>
++      <option name="number" value="00017" />
++      <option name="presentableId" value="LOCAL-00017" />
++      <option name="project" value="LOCAL" />
++      <updated>1699538549475</updated>
++    </task>
++    <option name="localTasksCounter" value="18" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.10\" project-jdk-type=\"Python SDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 492557bc974402f694e59368c4696b65cde1310c)
++++ b/.idea/misc.xml	(date 1699538578290)
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (venv_AOP_ML)" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
