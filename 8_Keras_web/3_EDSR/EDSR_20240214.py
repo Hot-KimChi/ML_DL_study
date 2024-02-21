@@ -1,4 +1,6 @@
-## import and dependancy
+"""
+import and dependancy
+"""
 import numpy as np
 import tensorflow as tf
 import tensorflow_datasets as tfds
@@ -10,9 +12,12 @@ from tensorflow.keras import layers
 AUTOTUNE = tf.data.AUTOTUNE
 
 
-## GPU check and CUDA to use
-## Tensorflow 선택할 경우, 
-# GPU를 사용하도록 설정
+"""
+GPU check and CUDA to use
+1) Tensorflow 선택할 경우, 
+2) GPU를 사용하도록 설정
+"""
+
 print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 
 # GPU를 사용하도록 설정
@@ -28,3 +33,11 @@ if gpus:
     except RuntimeError as e:
         # 메모리 성장을 설정할 수 없는 경우
         print(e)
+
+
+"""
+Download the training dataset
+1) check dataset size
+"""
+div2k_data = tfds.image.Div2k(config="bicubic_x4")
+div2k_data.download_and_prepare()
