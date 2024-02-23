@@ -43,4 +43,4 @@ div2k_data = tfds.image.Div2k(config="bicubic_x4")
 div2k_data.download_and_prepare()
 
 # train-dataset
-div2k_data.as_dataset()
+div2k_data.as_dataset(split="train", as_supervised=True)
