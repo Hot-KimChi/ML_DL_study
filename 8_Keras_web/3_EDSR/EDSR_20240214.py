@@ -45,3 +45,13 @@ div2k_data.download_and_prepare()
 # train-dataset
 train = div2k_data.as_dataset(split="train", as_supervised=True)
 train_cache = train.cache()
+
+val = div2k_data.as_dataset(split="validation", as_supervised=True)
+val_cache = val.cache()
+
+# 데이터셋 형태 확인
+print("훈련용 데이터셋 형태:", train_cache)
+for image, label in train_cache.take(1):
+    print("이미지 형태:", image.shape)
+    print("라벨 형태", label.shape)
+    
